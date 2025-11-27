@@ -4,11 +4,131 @@
 
 End-to-end AI restaurant reservation agent with dynamic recommendations, 50+ venues, and LLM-driven tool calling (MCP/A2A). Built from scratch—no LangChain.
 
-[![Built with React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev/)
-[![Powered by Gemini](https://img.shields.io/badge/Gemini-2.0-4285f4?logo=google)](https://ai.google.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178c6?logo=typescript)](https://www.typescriptlang.org/)
 
----
+
+ # Project Summary & Mind Map
+
+```mermaid
+mindmap
+   root((GoodFoods AI Concierge - Agentic Reservation System))
+      Version: 1.0
+      Source Docs
+         BUSINESS_STRATEGY.md
+         TECHNICAL_DOCUMENTATION.md
+         PROJECT_DOC.md
+         PROJECT_SUMMARY.md
+      Architecture Stack
+         Frontend: React 19 + TypeScript + Vite
+         LLM: OpenRouter Llama 3.3 / Gemini 2.0 Flash
+         Protocol: MCP/A2A tool calling
+         Styling: Tailwind CSS
+         Database: In-memory (mockDb.ts, 100 restaurants)
+      Key Components
+         App.tsx: Main chat interface
+         openRouterService.ts: Agent orchestration
+         mockDb.ts: DB & reservation manager
+         RestaurantCard.tsx: Restaurant UI
+      Business Strategy
+         Pain Points
+            Operator: Staff Overhead, Revenue Leakage, Capacity, Acquisition Cost
+            Diner: Decision Paralysis, Booking Friction
+         Competitive Advantages
+            Autonomous Agent Architecture
+            Hyper-Personalized Recommendations
+            Inventory Optimization Intelligence
+         ROI
+            Cost: $213K (Year 1)
+            Benefit: $1.06M
+            Net ROI: 398%
+      Agent Core Capabilities
+         LLM Tools
+            searchRestaurants
+            checkAvailability
+            bookTable
+            cancelReservation
+            getMyReservations
+         Workflow: Dynamic tool selection (MCP/A2A)
+      Strategic Expansion
+         Verticals
+            Health & Wellness Spas
+            Entertainment & Recreation
+            Professional Services
+            Corporate Catering & Events
+         Geographic: Toronto, London, Singapore
+```
+
+## JSON Project Summary
+
+<details>
+<summary>Click to expand/collapse the full JSON preview</summary>
+
+```json
+{
+   "project_name": "GoodFoods AI Concierge - Agentic Reservation System",
+   "version": "1.0",
+   "source_documents": [
+      "BUSINESS_STRATEGY.md",
+      "TECHNICAL_DOCUMENTATION.md",
+      "PROJECT_DOC.md",
+      "PROJECT_SUMMARY.md"
+   ],
+   "architecture_stack": {
+      "frontend": "React 19 + TypeScript + Vite",
+      "llm": "OpenRouter Llama 3.3 / Google Gemini 2.0 Flash",
+      "protocol": "MCP/A2A tool calling",
+      "styling": "Tailwind CSS",
+      "database": "In-memory database (mockDb.ts) for 100 restaurants"
+   },
+   "key_components": [
+      {"file": "App.tsx", "function": "Main React chat interface, handles user input and rendering [1]"},
+      {"file": "openRouterService.ts", "function": "Implements the autonomous agent orchestration loop [1, 4]"},
+      {"file": "mockDb.ts", "function": "In-memory database generator and reservation manager [1, 4]"},
+      {"file": "RestaurantCard.tsx", "function": "Displays restaurant details and booking actions [1, 4]"}
+   ],
+   "business_strategy": {
+      "primary_pain_points": {
+         "operator_pain_points": [
+            "Staff Overhead (15-20 hours/week per location) [5]",
+            "Revenue Leakage (20-30% no-show rates) [5]",
+            "Inefficient Capacity Management [5]",
+            "Customer Acquisition Cost ($25-50 per new diner) [5]"
+         ],
+         "diner_pain_points": [
+            "Decision Paralysis (23 minutes researching) [5]",
+            "Booking Friction (40% abandonment rate) [5]"
+         ]
+      },
+      "competitive_advantages": [
+         "Autonomous Agent Architecture (LLM eliminates cognitive load) [6]",
+         "Hyper-Personalized Recommendations (Considers social context, budget signals) [7]",
+         "Inventory Optimization Intelligence (Predictive overbooking, dynamic slot allocation) [8]"
+      ],
+      "roi_summary": {
+         "total_cost": "$213K (Year 1) [9]",
+         "total_benefit": "$1.06M (Direct booking, upselling, labor reduction) [9]",
+         "net_roi": "398% (Year 1) [9-11]"
+      }
+   },
+   "agent_core_capabilities": {
+      "llm_tools": [
+         "searchRestaurants (Find venues by criteria) [12]",
+         "checkAvailability (Verify table availability) [12]",
+         "bookTable (Finalize reservations) [12]",
+         "cancelReservation (Cancel existing bookings) [12]",
+         "getMyReservations (View user bookings) [12]"
+      ],
+      "workflow_explanation": "LLM dynamically selects and sequences tools (MCP/A2A) based on user intent [13, 14]"
+   },
+   "strategic_expansion": {
+      "verticals": [
+         "Health & Wellness Spas [15]",
+         "Entertainment & Recreation (Movie theaters, escape rooms) [15]",
+         "Professional Services (Lawyers, accountants) [15]",
+         "Corporate Catering & Events [16]"
+      ],
+      "geographic": "International Markets (Toronto, London, Singapore priority) [6]"
+   }
+```
 
 ## 🎯 Challenge Overview
 
@@ -401,5 +521,9 @@ For questions or feedback:
 
 <div align="center">
 <p><strong>Built with ❤️ for the AI Agent Challenge</strong></p>
-<p><em>Transforming restaurant reservations through intelligent conversation</em></p>
-</div>
+
+
+
+
+
+
