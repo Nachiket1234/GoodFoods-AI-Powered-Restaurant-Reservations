@@ -1,7 +1,7 @@
 import { db } from "../data/mockDb";
 
 // OpenRouter API configuration
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = ""; // <-- Insert your OpenRouter API key here
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions";
 const MODEL = "meta-llama/llama-3.3-70b-instruct"; // Using Llama 3.3 70B
 

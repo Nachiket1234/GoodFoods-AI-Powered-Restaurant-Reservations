@@ -1,3 +1,37 @@
+# Project Summary
+
+## Description
+End-to-end AI-powered restaurant reservation agent. Users can discover, get recommendations, check availability, and book instantly. Powered by Llama (OpenRouter) with dynamic tool calling (MCP/A2A).
+
+## Architecture
+- **Frontend:** React (TypeScript) chat UI and restaurant browsing.
+- **Backend Agent:** Custom service with Llama via OpenRouter. Handles queries, determines intent, and calls tools (search, recommend, reserve, cancel) using MCP/A2A.
+- **Database:** In-memory mock database with 100 synthetic restaurants (name, location, cuisine, seating, cost, features).
+
+## Key Features
+- 50–100 restaurant locations
+- LLM-driven recommendations and search
+- Real-time availability and booking
+- Tool calling: LLM selects tools by intent
+- No LangChain or similar frameworks
+
+## Workflow
+1. User enters request in chat UI (`App.tsx`).
+2. Frontend sends request to backend agent (`openRouterService.ts`).
+3. LLM determines intent and selects tool (search, check, book, etc.).
+4. Backend executes tool using `mockDb.ts`.
+5. LLM synthesizes response, frontend displays results/cards.
+
+## Extensibility
+Easily add new tools, models, or data sources.
+
+## Sample Prompts
+- "Find a romantic Italian restaurant in Manhattan."
+- "Book a table for 4 at a sushi place near Downtown tonight."
+- "Show me vegan-friendly options with outdoor seating."
+- "Check availability for The Golden Spoon for 2 people at 7 PM."
+- "Cancel my reservation for tomorrow."
+- "List my upcoming reservations."
 # GoodFoods AI Concierge - Project Summary
 
 ## Executive Overview
