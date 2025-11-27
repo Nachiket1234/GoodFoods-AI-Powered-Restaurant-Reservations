@@ -2,7 +2,7 @@
 
 ![1764230152190](image/README/1764230152190.png)
 
-> An intelligent AI agent for restaurant discovery, availability checking, and seamless booking powered by Google Gemini 2.0
+End-to-end AI restaurant reservation agent with dynamic recommendations, 50+ venues, and LLM-driven tool calling (MCP/A2A). Built from scratch—no LangChain.
 
 [![Built with React](https://img.shields.io/badge/React-19-61dafb?logo=react)](https://react.dev/)
 [![Powered by Gemini](https://img.shields.io/badge/Gemini-2.0-4285f4?logo=google)](https://ai.google.dev/)
@@ -254,7 +254,7 @@ GEMINI_API_KEY=your_api_key_here
 **Note:** The provided key is already configured:
 
 ```
-AIzaSyCdzjphAamNyXvWUryMvIBgyfMWLT8HiZ8
+
 ```
 
 ### Customization
