@@ -1,0 +1,5 @@
+{
+  "name": "GoodFoods AI",
+  "description": "An intelligent restaurant reservation agent capable of searching, booking, and managing dining experiences using Gemini 2.5.",
+  "requestFramePermissions": []
+}
