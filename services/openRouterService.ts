@@ -1,7 +1,7 @@
 import { db } from "../data/mockDb";
 
 // OpenRouter API configuration
-const OPENROUTER_API_KEY = ""; // <-- Insert your OpenRouter API key here
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || ""; // Uses Vercel environment variable
 const OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1/chat/completions";
 const MODEL = "meta-llama/llama-3.3-70b-instruct"; // Using Llama 3.3 70B
 
