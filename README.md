@@ -129,6 +129,7 @@ mindmap
       "geographic": "International Markets (Toronto, London, Singapore priority) [6]"
    }
 ```
+</details>
 
 ## 🎯 Challenge Overview
 
